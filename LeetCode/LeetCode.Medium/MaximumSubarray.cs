@@ -1,12 +1,8 @@
-﻿
-
-using System.Globalization;using System.Text.Json.Serialization.Metadata;
-
-namespace MaximumSubarray
+﻿namespace LeetCode.Medium
 {
-    public class MaxSubrray
+    public class MaximumSubarray
     {
-        public static int MaxSubArray(List<int> nums)
+        public static int GetMaxSubArray(List<int> nums)
         {
             int maxSub = nums[0];
             int curSum = 0;
@@ -24,4 +20,3 @@ namespace MaximumSubarray
         }
     }
 }
-

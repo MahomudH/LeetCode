@@ -9,6 +9,7 @@ void printTitle(string title)
     Console.WriteLine($"{title} :-");
     Console.ResetColor();
 }
+#region Easy Example
 
 #region Diameter Of A Binary Tree
 
@@ -100,13 +101,6 @@ TreeNode.PrintTree(MergingTwoBinary.MergeTrees(tree1, tree2));
 
 #endregion
 
-#region Reverse Integer
-
-printTitle("Reverse Integer");
-Console.WriteLine(ReverseInterger.RevirseIntger(2147483641));
-
-#endregion
-
 #region Anagram
 
 string t = "abs";
@@ -145,4 +139,52 @@ ListNode mergedList = MergeTwoSortedList.MergeTwoLists(list1, list2);
 
 printTitle("Merged List:");
 ListNode.PrintList(mergedList);
+#endregion
+
+#endregion
+
+#region Medium Example
+
+
+#region House Robber
+
+var test = new int[] { 1, 5, 6, 4, 3, 2 };
+
+printTitle("House Robber");
+Console.WriteLine(HouseRobber.Rob(test));
+
+#endregion
+
+#region Maximum Subarray
+
+var nums = new List<int> { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+
+printTitle("Maximum Subarray");
+Console.WriteLine(MaximumSubarray.GetMaxSubArray(nums));
+
+#endregion
+
+#region Sum TwoII 
+
+int[] sum = new int[] {1,5,6,8,10 };
+printTitle("Sum TwoII");
+Console.Write("[");
+var result2 = SumTwoII.GetSumTwo(sum, 9);
+foreach (var item in result2)
+{
+    Console.Write(item);
+    if (item == result2[1])
+        continue;
+    Console.Write(", ");
+}
+Console.Write("]");
+
+#endregion
+
+#region Reverse Integer
+
+printTitle("Reverse Integer");
+Console.WriteLine(ReverseInterger.RevirseIntger(2147483641));
+
+#endregion
 #endregion

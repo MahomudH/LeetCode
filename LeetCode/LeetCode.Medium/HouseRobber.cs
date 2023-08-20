@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HouseRobber
+﻿namespace LeetCode.Medium
 {
-    public class Solution
+    public class HouseRobber
     {
         public static int Rob(int[] nums)
         {
