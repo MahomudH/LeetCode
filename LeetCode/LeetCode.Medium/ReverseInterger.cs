@@ -2,7 +2,7 @@
 {
     public class ReverseInterger
     {
-        public int RevirseIntger(int number)
+        public static int RevirseIntger(int number)
         {
             long result = 0;
 

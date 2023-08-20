@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LeetCode.core\LeetCode.Core.csproj" />
     <ProjectReference Include="..\LeetCode.Easy\LeetCode.Easy.csproj" />
     <ProjectReference Include="..\LeetCode.Medium\LeetCode.Medium.csproj" />
   </ItemGroup>

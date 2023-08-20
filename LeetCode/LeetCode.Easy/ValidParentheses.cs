@@ -2,7 +2,7 @@
 {
     public class ValidParentheses
     {
-        public bool IsValid(string text)
+        public static bool IsValid(string text)
         {
             Stack<char> stack = new Stack<char>();
 

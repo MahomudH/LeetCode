@@ -2,7 +2,7 @@
 {
     public class ReplaceElementsWithGreatestElementOnRightSide
     {
-        public int[] ReplaceElements(int[] arr)
+        public static int[] ReplaceElements(int[] arr)
         {
             if (arr == null || arr.Length == 0) return arr;
 

@@ -1,17 +1,11 @@
-﻿namespace LeetCode.Easy
+﻿using LeetCode.Core;
+
+namespace LeetCode.Easy
 {
-    public class ListNode
-    {
-        public int Value;
-        public ListNode Next;
-        public ListNode(int value)
-        {
-            Value = value;
-        }
-    }
+
     public class PalindromeLinkedList
     {
-        public bool IsPalindrome(ListNode head)
+        public static bool IsPalindrome(ListNode head)
         {
             if(head == null || head.Next == null) return true;
 

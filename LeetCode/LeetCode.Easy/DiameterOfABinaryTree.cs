@@ -1,17 +1,17 @@
-﻿using LeetCode.Easy.commonClasses;
+﻿using LeetCode.Core;
 
 namespace LeetCode.Easy
 {
     public class DiameterOfABinaryTree
     {
-        public int DiameterOfBinaryTree(TreeNode root)
+        public static int DiameterOfBinaryTree(TreeNode root)
         {
             int diameter = 0;
             Height(root, ref diameter);
             return diameter;
         }
 
-        private int Height(TreeNode node, ref int diameter)
+        private static int Height(TreeNode node, ref int diameter)
         {
             if (node == null)
             {

@@ -1,10 +1,10 @@
-﻿using LeetCode.Easy.commonClasses;
+﻿using LeetCode.Core;
 
 namespace LeetCode.Easy
 {
     public class MergingTwoBinary
     {
-        public TreeNode MergeTrees(TreeNode tree1, TreeNode tree2)
+        public static TreeNode MergeTrees(TreeNode tree1, TreeNode tree2)
         {
             if (tree1 == null && tree2 == null) return null;
 

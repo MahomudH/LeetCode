@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Security.Cryptography;
 
-namespace Anagram
+namespace LeetCode.Easy
 {
     public class Anagram
     {
@@ -24,7 +20,7 @@ namespace Anagram
             return sortedFirst.Equals(sortedSecond);
         }
 
-        //this is NeetCode solution
+        //this is LeetCode solution
         public static bool AreAnagrams(string str1, string str2)
         {
             if (str1.Length != str2.Length)
@@ -54,5 +50,6 @@ namespace Anagram
 
             return charCount.Count == 0;
         }
+
     }
 }

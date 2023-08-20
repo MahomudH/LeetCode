@@ -1,11 +1,11 @@
 ﻿using LeetCode.Easy;
-using LeetCode.Easy.commonClasses;
+using LeetCode.Core;
 using LeetCode.Medium;
 
 void printTitle(string title)
 {
-    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine($"{title} :-");
     Console.ResetColor();
 }
@@ -19,8 +19,7 @@ root.left.right = new TreeNode(4);
 root.left.right.right = new TreeNode(6);
 root.left.left.left = new TreeNode(5);
 
-DiameterOfABinaryTree solution1 = new DiameterOfABinaryTree();
-int result = solution1.DiameterOfBinaryTree(root);
+int result = DiameterOfABinaryTree.DiameterOfBinaryTree(root);
 printTitle("Diameter Of A Binary Tree");
 Console.WriteLine($"the result must be 4  ==> the result is {result}");
 
@@ -31,10 +30,9 @@ Console.WriteLine($"the result must be 4  ==> the result is {result}");
 string test1 = "(({[]}{}))";
 string test2 = "(({[]}]{}))";
 
-ValidParentheses solution2 = new ValidParentheses();
 printTitle("Valid Parantathese");
-Console.WriteLine($"the result must be true  ==> the result is {solution2.IsValid(test1)}");
-Console.WriteLine($"the result must be false  ==> the result is {solution2.IsValid(test2)}");
+Console.WriteLine($"the result must be true  ==> the result is {ValidParentheses.IsValid(test1)}");
+Console.WriteLine($"the result must be false  ==> the result is {ValidParentheses.IsValid(test2)}");
 
 #endregion
 
@@ -48,9 +46,8 @@ node1.Next = node2;
 node2.Next = node3;
 node3.Next = node4;
 
-PalindromeLinkedList solution = new PalindromeLinkedList();
 printTitle("Palindrome Linked List");
-Console.WriteLine($"the result must be true  ==> the result is {solution.IsPalindrome(node1)}");
+Console.WriteLine($"the result must be true  ==> the result is {PalindromeLinkedList.IsPalindrome(node1)}");
 
 #endregion
 
@@ -64,25 +61,23 @@ rootBeforeReverse.left.right = new TreeNode(5);
 rootBeforeReverse.right.left = new TreeNode(6);
 rootBeforeReverse.right.right = new TreeNode(7);
 
-InvertBinaryTree inversion = new InvertBinaryTree();
 printTitle("Invert Binary Tree");
 Console.WriteLine("Original Tree (pre-order traversal):");
-inversion.PrintTree(rootBeforeReverse);
+TreeNode.PrintTree(rootBeforeReverse);
 Console.WriteLine();
 
-TreeNode invertedRoot = inversion.InvertTree(rootBeforeReverse);
+TreeNode invertedRoot = InvertBinaryTree.InvertTree(rootBeforeReverse);
 
 Console.WriteLine("Inverted Tree (pre-order traversal):");
-inversion.PrintTree(invertedRoot);
+TreeNode.PrintTree(invertedRoot);
 Console.WriteLine();
 
 #endregion
 
 #region Replace Elements with Greatest Element on Right Side
 
-var solution5 = new ReplaceElementsWithGreatestElementOnRightSide();
 var arr = new int[] { 17, 18, 5, 4, 6, 1 };
-var result5 = solution5.ReplaceElements(arr);
+var result5 = ReplaceElementsWithGreatestElementOnRightSide.ReplaceElements(arr);
 printTitle("Replace Elements with Greatest Element on Right Side");
 Console.WriteLine(string.Join(", ", result5));
 
@@ -100,16 +95,54 @@ tree2.right = new TreeNode(2);
 tree2.right.left = new TreeNode(5);
 tree2.right.right = new TreeNode(1);
 
-var solution6 = new MergingTwoBinary();
 printTitle("Merge Two Binary Tree");
-inversion.PrintTree(solution6.MergeTrees(tree1, tree2));
+TreeNode.PrintTree(MergingTwoBinary.MergeTrees(tree1, tree2));
 
 #endregion
 
 #region Reverse Integer
 
-var solution7 = new ReverseInterger();
 printTitle("Reverse Integer");
-Console.WriteLine(solution7.RevirseIntger(2147483641));
+Console.WriteLine(ReverseInterger.RevirseIntger(2147483641));
 
+#endregion
+
+#region Anagram
+
+string t = "abs";
+string s = "sba";
+printTitle("Reverse Integer");
+Console.WriteLine(Anagram.IsAnagram(s, t));
+
+#endregion
+
+#region Climbing Stairs
+
+printTitle("Climbing Stairs");
+Console.WriteLine(ClimbingStairs.GetClimbStairs(7));// result must equal 21
+
+#endregion
+
+#region Merge Two Sorted List
+
+ListNode list1 = new ListNode(1)
+{
+    Next = new ListNode(3)
+    {
+        Next = new ListNode(5)
+    }
+};
+
+ListNode list2 = new ListNode(2)
+{
+    Next = new ListNode(4)
+    {
+        Next = new ListNode(6)
+    }
+};
+
+ListNode mergedList = MergeTwoSortedList.MergeTwoLists(list1, list2);
+
+printTitle("Merged List:");
+ListNode.PrintList(mergedList);
 #endregion

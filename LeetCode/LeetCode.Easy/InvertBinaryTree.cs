@@ -1,11 +1,11 @@
-﻿using LeetCode.Easy.commonClasses;
+﻿using LeetCode.Core;
 
 namespace LeetCode.Easy
 {
 
     public  class InvertBinaryTree
     {
-        public TreeNode InvertTree(TreeNode root)
+        public static TreeNode InvertTree(TreeNode root)
         {
             if (root == null)
                 return null;
@@ -18,18 +18,6 @@ namespace LeetCode.Easy
             InvertTree(root.right);
 
             return root;
-        }
-
-        public void PrintTree(TreeNode node)
-        {
-            if (node == null)
-            {
-                return;
-            }
-
-            Console.Write(node.val + " ");
-            PrintTree(node.left);
-            PrintTree(node.right);
         }
     }
 }
