@@ -194,4 +194,21 @@ printTitle("Reverse Integer");
 Console.WriteLine(ReverseInterger.RevirseIntger(2147483641));
 
 #endregion
+
+#region Min Stack
+printTitle("Min Stack");
+MinStack minStack = new MinStack();
+minStack.Push(-2);
+minStack.Push(0);
+minStack.Push(-3);
+
+Console.WriteLine("Minimum element: " + minStack.GetMin()); // Output: -3
+
+minStack.Pop();
+
+Console.WriteLine("Top element: " + minStack.Top());       // Output: 0
+Console.WriteLine("Minimum element: " + minStack.GetMin()); // Output: -2
+
+#endregion
+
 #endregion
