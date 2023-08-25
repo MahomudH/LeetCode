@@ -141,6 +141,13 @@ printTitle("Merged List:");
 ListNode.PrintList(mergedList);
 #endregion
 
+#region Happy Number
+
+printTitle("Happy Number:");
+Console.WriteLine($"Is 19 happy number => {HappyNumber.IsHappyNumber(19)}");
+Console.WriteLine($"Is 2  happy number => {HappyNumber.IsHappyNumber(2)}");
+
+#endregion
 #endregion
 
 #region Medium Example
