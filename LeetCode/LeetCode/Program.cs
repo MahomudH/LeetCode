@@ -148,6 +148,28 @@ Console.WriteLine($"Is 19 happy number => {HappyNumber.IsHappyNumber(19)}");
 Console.WriteLine($"Is 2  happy number => {HappyNumber.IsHappyNumber(2)}");
 
 #endregion
+
+#region Remove Linked List Elements
+
+ListNode head = new ListNode(1);
+head.Next = new ListNode(2);
+head.Next.Next = new ListNode(6);
+head.Next.Next.Next = new ListNode(3);
+head.Next.Next.Next.Next = new ListNode(4);
+head.Next.Next.Next.Next.Next = new ListNode(5);
+head.Next.Next.Next.Next.Next.Next = new ListNode(6);
+
+int val = 6;
+
+printTitle("Remove Linked List Elements :");
+Console.Write("The list before remove elements => ");
+ListNode.PrintList(head);
+Console.WriteLine();
+ListNode newHead = RemoveLinkedListElements.RemoveElements(head, val);
+Console.Write("The list after  remove elements => ");
+ListNode.PrintList(newHead);
+
+#endregion
 #endregion
 
 #region Medium Example
