@@ -170,6 +170,10 @@ Console.Write("The list after  remove elements => ");
 ListNode.PrintList(newHead);
 
 #endregion
+
+int[] numbers = new int[] { 1, 3, 5, 6 };
+printTitle("Search Insert Position :");
+Console.WriteLine(SearchInsertPosition.SearchInsert(numbers , 7));
 #endregion
 
 #region Medium Example
