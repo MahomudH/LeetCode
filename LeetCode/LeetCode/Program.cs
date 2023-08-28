@@ -171,9 +171,18 @@ ListNode.PrintList(newHead);
 
 #endregion
 
-int[] numbers = new int[] { 1, 3, 5, 6 };
+#region Search Insert Position
+int[] numbers = new int[] { 1,2,7,12,15};
 printTitle("Search Insert Position :");
-Console.WriteLine(SearchInsertPosition.SearchInsert(numbers , 7));
+Console.WriteLine(SearchInsertPosition.SearchInsert(numbers , 10));
+#endregion
+
+#region Remove Duplicates From Sorted Array
+int[] arrWithDuplicated = new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 };
+printTitle("Remove Duplicates From Sorted Array :");
+Console.WriteLine(RemoveDuplicatesFromSortedArray.RemoveDuplicates(arrWithDuplicated));
+#endregion
+
 #endregion
 
 #region Medium Example
