@@ -183,6 +183,12 @@ printTitle("Remove Duplicates From Sorted Array :");
 Console.WriteLine(RemoveDuplicatesFromSortedArray.RemoveDuplicates(arrWithDuplicated));
 #endregion
 
+#region Ugly number
+printTitle("Ugly number :");
+Console.WriteLine(UglyNumber.IsUglyNumber(20));
+Console.WriteLine(UglyNumber.IsUglyNumber(14));
+#endregion
+
 #endregion
 
 #region Medium Example
