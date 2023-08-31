@@ -189,6 +189,11 @@ Console.WriteLine(UglyNumber.IsUglyNumber(20));
 Console.WriteLine(UglyNumber.IsUglyNumber(14));
 #endregion
 
+#region Length Of Last Word
+printTitle("Length Of Last Word :");
+Console.WriteLine(LengthOfLastWord.GetLength("Hello World "));
+#endregion
+
 #endregion
 
 #region Medium Example
