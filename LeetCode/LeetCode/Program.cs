@@ -195,6 +195,11 @@ Console.WriteLine(LengthOfLastWord.GetLength("Hello World "));
 Console.WriteLine(LengthOfLastWord.GetLength(" "));
 #endregion
 
+#region Remove Element From Array
+printTitle("Remove Element From Array :");
+Console.WriteLine(RemoveElement.RemoveElementFromArray(new int[] {1,2,3,1,5,0,2,2,0,4,8 },2));
+#endregion
+
 #endregion
 
 #region Medium Example
