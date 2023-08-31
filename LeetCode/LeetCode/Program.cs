@@ -196,8 +196,13 @@ Console.WriteLine(LengthOfLastWord.GetLength(" "));
 #endregion
 
 #region Remove Element From Array
-printTitle("Remove Element From Array :");
+printTitle("Remove Element From Array ");
 Console.WriteLine(RemoveElement.RemoveElementFromArray(new int[] {1,2,3,1,5,0,2,2,0,4,8 },2));
+#endregion
+
+#region Uniqe Email Address
+printTitle("Uniqe Email Address ");
+Console.WriteLine(UniqueEmailAddresses.NumUniqueEmails(new string[] { "test.email+alex@leetcode.com", "test.email.leet+alex@code.com" }));
 #endregion
 
 #endregion
