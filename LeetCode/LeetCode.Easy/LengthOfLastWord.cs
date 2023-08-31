@@ -7,12 +7,12 @@
             int i = s.Length - 1;
             int length = 0;
 
-            while (s[i] == ' ')
+            while (i >= 0 && s[i] == ' ')
             {
                 i--;
             }
 
-            while (length >= 0 && s[i] != ' ')
+            while (i >= 0 && s[i] != ' ')
             {
                 length++;
                 i--;

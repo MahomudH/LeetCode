@@ -192,6 +192,7 @@ Console.WriteLine(UglyNumber.IsUglyNumber(14));
 #region Length Of Last Word
 printTitle("Length Of Last Word :");
 Console.WriteLine(LengthOfLastWord.GetLength("Hello World "));
+Console.WriteLine(LengthOfLastWord.GetLength(" "));
 #endregion
 
 #endregion
