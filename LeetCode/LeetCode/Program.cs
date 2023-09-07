@@ -205,6 +205,12 @@ printTitle("Uniqe Email Address ");
 Console.WriteLine(UniqueEmailAddresses.NumUniqueEmails(new string[] { "test.email+alex@leetcode.com", "test.email.leet+alex@code.com" }));
 #endregion
 
+#region Min Cost Climbing Stairs
+printTitle("Min Cost Climbing Stairs ");
+Console.WriteLine(MinCostClimbingStairs.GetMinCostClimbingStairsV1(new int[] { 10, 15, 20 ,0}));
+Console.WriteLine(MinCostClimbingStairs.GetMinCostClimbingStairsV2(new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 }));
+#endregion
+
 #endregion
 
 #region Medium Example
