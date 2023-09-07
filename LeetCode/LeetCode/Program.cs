@@ -211,6 +211,24 @@ Console.WriteLine(MinCostClimbingStairs.GetMinCostClimbingStairsV1(new int[] { 1
 Console.WriteLine(MinCostClimbingStairs.GetMinCostClimbingStairsV2(new int[] { 1, 100, 1, 1, 1, 100, 1, 1, 100, 1 }));
 #endregion
 
+#region Subtree of Another Tree
+printTitle("Subtree of Another Tree ");
+
+TreeNode tree = new TreeNode(3);
+tree.left = new TreeNode(4);
+tree.right = new TreeNode(5);
+tree.left.left = new TreeNode(1);
+tree.left.right = new TreeNode(2);
+
+// Constructing the subtree (t)
+TreeNode subtree = new TreeNode(4);
+subtree.left = new TreeNode(1);
+subtree.right = new TreeNode(2);
+
+Console.WriteLine(SubtreeOfAnotherTree.IsSubtree(tree, subtree));
+
+#endregion
+
 #endregion
 
 #region Medium Example
