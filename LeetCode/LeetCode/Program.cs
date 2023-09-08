@@ -1,3 +1,3 @@
 ﻿using LeetCode.Easy;
 
-Console.WriteLine(ContainsDuplicate.IsContainsDuplicateV2(new int[] { 1, 2, 3, 1 }));
+Console.WriteLine(CanPlaceFlowers.CanPlaceFlower(new int[] { 1, 0, 0, 0, 0, 0,0,0, 1 }, 2));
