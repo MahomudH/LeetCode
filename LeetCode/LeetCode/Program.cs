@@ -1,3 +1,3 @@
 ﻿using LeetCode.Easy;
 
-Console.WriteLine(FindTheIndexOfTheFirstOccurrenceInAString.GetIndexOf("mississippi", "sippia"));
+Console.WriteLine(MajorityElement.GetMajorityElement(new int[]{6,5,5}));
