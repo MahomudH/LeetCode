@@ -29,13 +29,6 @@ public class MoveZeroes
                 }
             }
         }
-
-        Console.Write("[");
-        foreach (int item in nums)
-        {
-            Console.Write(item +", ");
-        }
-        Console.Write("\b\b]");
     }
 }
 
