@@ -1,7 +1,5 @@
-﻿using LeetCode.Core;
+﻿using LeetCode.Easy;
 
-int[] result = SquaresOfASortedArray.GetSquresOfSortedArray(new int[] { -4, -1, 0, 3, 10 });
-foreach (int i in result)
-{
-    Console.Write(i + " ");
-}
+int[] nums = new int[] { 0, 1, 0, 2, 3 };
+
+MoveZeroes.PrintAfterMoveZeroes(nums);
