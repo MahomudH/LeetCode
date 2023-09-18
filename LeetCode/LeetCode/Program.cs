@@ -1,5 +1,5 @@
 ﻿using LeetCode.Easy;
 
-int[] nums = new int[] {1,7,3,6,5,6 };
+int[] nums = new int[] {2,2,1 };
 
-Console.WriteLine(FindPivotIndex.GetPivotIndex(nums));
+Console.WriteLine(SingleNumber.GetSingleNumber(nums));
