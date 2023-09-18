@@ -1,12 +1,5 @@
 ﻿using LeetCode.Easy;
 
-int[] nums = new int[] { 0, 1, 0, 2, 3 };
+int[] nums = new int[] {1,7,3,6,5,6 };
 
-MoveZeroes.PrintAfterMoveZeroes(nums);
-
-Console.Write("[");
-foreach (int item in nums)
-{
-    Console.Write(item + ", ");
-}
-Console.Write("\b\b]");
+Console.WriteLine(FindPivotIndex.GetPivotIndex(nums));
