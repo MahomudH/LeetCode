@@ -1,8 +1,9 @@
-﻿using LeetCode.Easy;
+﻿
+using LeetCode.Core;
+using LeetCode.Easy;
+using LeetCode.Medium;
 
-int[] nums = new int[] { 4, 3, 2, 7, 8, 2, 3, 1 };
+string[] tokens = { "4", "13", "5", "/", "+" };
+var result = EvaluateReversePolishNotation.EvalRPN(tokens);
 
-int[] res = AllNumbersDisappearedInArray.FindAllNumbersDisappearInArray(nums);
-
-foreach (int i in res)
-    Console.WriteLine(i);
+Console.WriteLine(result);
